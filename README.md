@@ -1,20 +1,17 @@
 # KaMT
 ## About
 
----
 This repository contains the code and resources of the following paper:
 Knowledge-aligned Multi-modal Transformer for Enhanced Scaffold-Hopping in Antibiotic Discovery.
 ## Overview of the framework
 
-___
 KaMT is a sophisticated deep learning framework designed for molecular property prediction and antibiotic discovery. By leveraging a Knowledge-aligned Multi-modal Transformer architecture, it integrates structural graph data with explicit chemical knowledge (descriptors and fingerprints) to achieve high-fidelity molecular representations.
 <p align="center">
-<img  src="pictures/KaMT_model.jpg"> 
+<img  src="pictures/KaMT_model.png"> 
 </p>
 
 ## Setup environment
 
-___
 Setup the required environment using the provided `environment.yml`.
 
     conda env create
@@ -25,7 +22,6 @@ Activate the environment
 
 ## Ready data
 
----
 Download ChEMBL database [chembl_36.db](https://ftp.ebi.ac.uk/pub/databases/chembl/ChEMBLdb/releases/chembl_36/chembl_36_sqlite.tar.gz)(or other version).  
 Then unzip the file and put it in the KaMT/dataset/chembl/ directory.  
 Enter the KaMT/scripts directory  
@@ -35,7 +31,6 @@ Extract SMILES from the ChEMBL database for subsequent pre-training:
 
 ## Pre-training
 
----
 Enter the KaMT/scripts directory  
 Prepare pre-training data: extract molecular fingerprints and knowledge descriptions of SMILES from the ChEMBL database  
 
@@ -47,7 +42,6 @@ Execute pre-training:
 
 ## Fine-tuning
 
----
 Enter the KaMT/antibiotics directory
 Extract the antibiotic dataset from the ChEMBL database:  
 
