@@ -7,7 +7,7 @@ Knowledge-aligned Multi-modal Transformer for Enhanced Scaffold-Hopping in Antib
 
 KaMT is a sophisticated deep learning framework designed for molecular property prediction and antibiotic discovery. By leveraging a Knowledge-aligned Multi-modal Transformer architecture, it integrates structural graph data with explicit chemical knowledge (descriptors and fingerprints) to achieve high-fidelity molecular representations.
 <p align="center">
-<img  src="pictures/KaMT_model.png"> 
+<img  src="/pictures/KaMT_model.png"> 
 </p>
 
 ## Setup environment
